@@ -11,7 +11,7 @@ AddEventHandler("ND:characterLoaded", function(char)
 end)
 
 function createchar (c)
-	exports['bryan_snaily']:InsertNewCitizen(c.firstname, c.lastname, c.dob, findcaduser(c.source), "Male")
+	exports['bryan_snaily']:InsertNewCitizen(c.firstname, c.lastname, c.dob, findcaduser(c.source), c.gender)
 end
 
 function findcaduser (user)
